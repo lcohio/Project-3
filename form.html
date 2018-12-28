@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register Here!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>the code review</h1>
+    </header>
+    <div class="container">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr id="top-hr">
+        <hr id="top-hr-2">
+        <form>
+            <fieldset>
+                <legend id="contact_info">Contact Information</legend>
+                <div class="upper-form">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" name="full_name" id="full_name" placeholder="Required" required>
+                    <label for="email_address">Email Address</label>
+                    <input type="email" name="email_address" id="email_address" placeholder="Required" required>
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="Phone Number">
+                    <label for="street_address">Street Address</label>
+                    <input type="text" name="street_address" id="street_address" placeholder="Street Address">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="" id="choose_state">Choose State</option>
+                    </select>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip" id="zip" placeholder="Zip Code">
+                </div>
+            </fieldset>  
+            <hr id="bottom-hr">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <label>Select the newsletters you would like to recieve</label>
+                <div class="html_news">
+                    <input type="checkbox" name="newsletters" id="html_news" value="html_news" checked="checked">
+                    <label for="html_news">HTML News</label>
+                </div>
+                <div class="css_news_div">
+                    <input type="checkbox" name="newsletters" id="css_news" value="css_news">
+                    <label for="css_news">CSS News</label>
+                </div>
+                <div class="javascript_news">
+                    <input type="checkbox" name="newsletters" id="javascript_news" value="javascript_news">
+                    <label for="javascript_news">Javascript News</label>
+                </div>
+                    <label>Newsletter format</label>
+                <div class="html_radio">
+                    <input type="radio" name="format" id="html" value="html" checked="checked">
+                    <label for="html">HTML</label>
+                </div>
+                <div class="plain_text_radio">
+                    <input type="radio" name="format" id="plain_text" value="plain_text">
+                    <label for="plain_text">Plain text</label>
+                </div>
+                <label for="misc_topics">Other topics you'd like to hear about</label>
+                <textarea id="misc_topics" name="topics"></textarea>
+                <button class="signup" type="submit">Sign Up</button>
+            </fieldset>
+            <p class="copyright">Copyright The Code Review</p>
+        </form>   
+    </div>
+</body>
+</html>
